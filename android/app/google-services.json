@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "276273650987",
+    "project_id": "loginapp-c0398",
+    "storage_bucket": "loginapp-c0398.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276273650987:android:a343561d0b7739c013396e",
+        "android_client_info": {
+          "package_name": "com.xunqi.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNaB0gwV1N_vj6ra4_-K6jRv_4GUk0y48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

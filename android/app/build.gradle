@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Firebase plugin
+    id 'kotlin-android'
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.xunqi.login"
+    compileSdk = 34 // Set to a specific value, not `flutter.compileSdkVersion`
+    ndkVersion = "23.1.7779620" // Update as per your system or remove if not using NDK
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.xunqi.login"
+        minSdk = 23 // Use a specific value, not `flutter.minSdkVersion`
+        targetSdk = 33 // Use a specific value, not `flutter.targetSdkVersion`
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+  dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+}
+
+flutter {
+    source = "../.."
+}
